@@ -23,7 +23,7 @@ namespace Karakter
 
         public override string ToString()
         {
-            return $"Név: {nev}, Szint: {szint}, Életerő: {eletero}, Erő: {ero}";
+            return $"{nev} - {szint} / {eletero} / {ero}";
         }
     }
 }

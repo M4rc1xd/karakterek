@@ -22,6 +22,9 @@ namespace Karakter
             ErossegSzerintRendezve(karakterek);
 
             ErosebbE(karakterek, 30);
+
+            karakterStats stats = new karakterStats(karakterek);
+            stats.ElegNagySzintuE(8);
         }
 
         static void Beolvasas(string filenev, List<Karakter> karakterek){
@@ -76,5 +79,7 @@ namespace Karakter
             }
         }
     
+        
+
     }
 }
