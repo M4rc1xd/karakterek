@@ -1,0 +1,14 @@
+/Users/kovermarcell/Desktop/susu/cs/02.14/bin/Debug/net9.0/02.14
+/Users/kovermarcell/Desktop/susu/cs/02.14/bin/Debug/net9.0/02.14.deps.json
+/Users/kovermarcell/Desktop/susu/cs/02.14/bin/Debug/net9.0/02.14.runtimeconfig.json
+/Users/kovermarcell/Desktop/susu/cs/02.14/bin/Debug/net9.0/02.14.dll
+/Users/kovermarcell/Desktop/susu/cs/02.14/bin/Debug/net9.0/02.14.pdb
+/Users/kovermarcell/Desktop/susu/cs/02.14/obj/Debug/net9.0/02.14.GeneratedMSBuildEditorConfig.editorconfig
+/Users/kovermarcell/Desktop/susu/cs/02.14/obj/Debug/net9.0/02.14.AssemblyInfoInputs.cache
+/Users/kovermarcell/Desktop/susu/cs/02.14/obj/Debug/net9.0/02.14.AssemblyInfo.cs
+/Users/kovermarcell/Desktop/susu/cs/02.14/obj/Debug/net9.0/02.14.csproj.CoreCompileInputs.cache
+/Users/kovermarcell/Desktop/susu/cs/02.14/obj/Debug/net9.0/02.14.dll
+/Users/kovermarcell/Desktop/susu/cs/02.14/obj/Debug/net9.0/refint/02.14.dll
+/Users/kovermarcell/Desktop/susu/cs/02.14/obj/Debug/net9.0/02.14.pdb
+/Users/kovermarcell/Desktop/susu/cs/02.14/obj/Debug/net9.0/02.14.genruntimeconfig.cache
+/Users/kovermarcell/Desktop/susu/cs/02.14/obj/Debug/net9.0/ref/02.14.dll
