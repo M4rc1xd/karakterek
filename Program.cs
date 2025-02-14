@@ -29,6 +29,8 @@ namespace Karakter
             toCSV(karakterek);
 
             fromCSV();
+            
+            LegjobbHarom(karakterek);
         }
 
         static void Beolvasas(string filenev, List<Karakter> karakterek){
@@ -104,6 +106,14 @@ namespace Karakter
             {
                 string[] sor = sr.ReadLine().Split(';');
                 Console.WriteLine((sor[0], Convert.ToInt16(sor[1]), Convert.ToInt16(sor[2]), Convert.ToInt16(sor[3])));
+            }
+        }
+    
+        static void LegjobbHarom(List<Karakter> karakterek){
+            karakterek.Sort((x, y) => (y.Szint + y.Ero).CompareTo(x.Szint + x.Ero));
+            System.Console.WriteLine("\nLegjobb 3 karakter:");
+            for(int i = 0; i < 3 && i < karakterek.Count; i++){
+                System.Console.WriteLine(karakterek[i]);
             }
         }
     }
