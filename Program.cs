@@ -27,6 +27,8 @@ namespace Karakter
             stats.ElegNagySzintuE(8);
 
             toCSV(karakterek);
+
+            fromCSV();
         }
 
         static void Beolvasas(string filenev, List<Karakter> karakterek){
@@ -94,5 +96,15 @@ namespace Karakter
             System.Console.WriteLine("\nSikeres CSV írás!");
         }
 
+        static void fromCSV(){
+            System.Console.WriteLine("\nCSV beolvasás:");
+            StreamReader sr = new StreamReader("karakterek.csv");
+            sr.ReadLine(); 
+            while (!sr.EndOfStream)
+            {
+                string[] sor = sr.ReadLine().Split(';');
+                Console.WriteLine((sor[0], Convert.ToInt16(sor[1]), Convert.ToInt16(sor[2]), Convert.ToInt16(sor[3])));
+            }
+        }
     }
 }
