@@ -1,13 +1,13 @@
 namespace Karakter
 {
-    public class karakter
+    public class Karakter
     {
         private string nev;
         private int szint;
         private int eletero;
         private int ero;
 
-        public karakter(string nev, int szint, int eletero, int ero)
+        public Karakter(string nev, int szint, int eletero, int ero)
         {
             this.nev = nev;
             this.szint = szint;
