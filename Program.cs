@@ -29,8 +29,10 @@ namespace Karakter
             toCSV(karakterek);
 
             fromCSV();
-            
+
             LegjobbHarom(karakterek);
+
+            KarakterRangsoroloas(karakterek);
         }
 
         static void Beolvasas(string filenev, List<Karakter> karakterek){
@@ -116,5 +118,15 @@ namespace Karakter
                 System.Console.WriteLine(karakterek[i]);
             }
         }
+    
+        static void KarakterRangsoroloas(List<Karakter> karakterek){
+            karakterek.Sort((x, y) => (y.Szint + y.Ero).CompareTo(x.Szint + x.Ero));
+            System.Console.WriteLine("\nRangsorolt karakterek:");
+            foreach(var item in karakterek){
+                System.Console.WriteLine(item);
+            }
+        }
+    
+        
     }
 }
