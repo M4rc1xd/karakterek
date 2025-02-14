@@ -16,6 +16,12 @@ namespace Karakter
             }
 
             LegmagasabbEletero(karakterek);
+
+            AtlagSzint(karakterek);
+
+            ErossegSzerintRendezve(karakterek);
+
+            ErosebbE(karakterek, 30);
         }
 
         static void Beolvasas(string filenev, List<Karakter> karakterek){
@@ -40,10 +46,35 @@ namespace Karakter
 
             foreach(var item in karakterek){
                 if(item.Eletero == max){
-                    System.Console.WriteLine();
-                    System.Console.Write("Legmagasabb életerő: "+item);
+                    System.Console.Write("\nLegmagasabb életerő: "+item);
                 }
             }
         }
+    
+        static void AtlagSzint(List<Karakter> karakterek){
+            int osszeg = 0;
+            foreach(var item in karakterek){
+                osszeg += item.Szint;
+            }
+            System.Console.WriteLine("\nÁtlag szint: "+osszeg/karakterek.Count);
+        }
+    
+        static void ErossegSzerintRendezve(List<Karakter> karakterek){
+            karakterek.Sort((x, y) => x.Ero.CompareTo(y.Ero));
+            System.Console.WriteLine("\nErő szerint rendezve:");
+            foreach(var item in karakterek){
+                System.Console.WriteLine(item);
+            }
+        }
+    
+        static void ErosebbE(List<Karakter> karakterek, int e){
+            System.Console.WriteLine("\n"+e+" erosségnél erősebb karakterek:");
+            foreach(var item in karakterek){
+                if(item.Ero > e){
+                    System.Console.WriteLine(item);
+                }
+            }
+        }
+    
     }
 }
